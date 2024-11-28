@@ -2,19 +2,19 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Vindhyaa',
+        lastName:  'Saravanan',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        location:  'Europe/London',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        languages: ['English', 'Hindi', 'Tamil']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
-        display: true,
+        display: false,
         title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
         description: <>{t("newsletter.description")}</>
     }
@@ -25,22 +25,17 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/Vindhyaa-Saravanan',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
-        },
-        {
-            name: 'X',
-            icon: 'x',
-            link: '',
+            link: 'https://www.linkedin.com/in/vindhyaa-saravanan/',
         },
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:vindhyaa.saravanan@yahoo.in',
         },
     ]
 
@@ -74,44 +69,57 @@ const createI18nContent = (t) => {
         },
         work: {
             display: true, // set to false to hide this section
-            title: t("about.work.title"),
-            experiences: [
-                {
-                    company: 'FLY',
-                    timeframe: t("about.work.experiences.FLY.timeframe"),
-                    role: t("about.work.experiences.FLY.role"),
-                    achievements: t("about.work.experiences.FLY.achievements").split(";"),
-                    images: [ // optional: leave the array empty if you don't want to display images
-                        {
-                            src: '/images/projects/project-01/cover-01.jpg',
-                            alt: 'Once UI Project',
-                            width: 16,
-                            height: 9
-                        }
-                    ]
-                },
-                {
-                    company: 'Creativ3',
-                    timeframe: t("about.work.experiences.Creativ3.timeframe"),
-                    role: t("about.work.experiences.Creativ3.role"),
-                    achievements: t("about.work.experiences.Creativ3.achievements").split(";"),
-                    images: [ ]
-                }
-            ]
+        title: 'Work Experience',
+        experiences: [
+            {
+                company: 'Schneider Electric',
+                timeframe: 'June 2024 - August 2024',
+                role: 'Process Automation Intern',
+                achievements: [
+                    <>Worked with virtualization and application in industrial virtualized cybersecurity solution for SCADA systems.</>,
+                    <>Facilitated Delivery Quality procedures and factory acceptance testing, contributed extensively to documentation.</>,
+                    <>Tested SCADA software with simulated RTU devices to evaluate configuration accuracy and response times, improving testing efficiency by 20%.</>,
+                    <>Created robust documentation for virtualized Acronis cybersecurity solution for emergency shutdown systems.</>,
+                ],
+                images: [ ]
+            },
+            {
+                company: 'AVEVA Solutions',
+                timeframe: 'June 2023 - August 2023',
+                role: 'R&D Member of Staff - Apprentice',
+                achievements: [
+                    <>Built Security and Platform Operations DevOps team-specific centralized visualization Jira dashboard, improving team
+                    performance and visibility.</>,
+                    <>Monitored security alerts on Microsoft Azure Defender and AWS GuardDuty, improving team response time and incident
+                    resolution efficiency.</>,
+                    <>Performed a cost analysis of existing AWS Backup solutions and contributed changes to Terraform IaaS codebase in Azure
+                    DevOps that reduced backup costs by 15%.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Schneider Electric',
+                timeframe: 'July 2022 - September 2022',
+                role: 'Cybersecurity Intern',
+                achievements: [
+                    <>Gained hands-on experience in industrial control systems, network security, and cybersecurity within critical infrastructure.</>,
+                    <>Delivered a training presentation on IEC-62443 cybersecurity standards to ensure compliance in industrial environments.</>,
+                    <>Led a team of 9 in a qualitative analysis of SaaS licensing models for service providers, presented to company VPs, and secured 1st
+place for presentation skills and content quality.</>
+                ],
+                images: [ ]
+            }
+        ]
         },
         studies: {
             display: true, // set to false to hide this section
-            title: 'Studies',
-            institutions: [
-                {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
-                },
-                {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
-                }
-            ]
+        title: 'Education',
+        institutions: [
+            {
+                name: 'University of Leeds',
+                description: <>MEng BSc Computer Science - On track for a First-Class Honours degree.</>
+            }
+        ]
         },
         technical: {
             display: true, // set to false to hide this section
