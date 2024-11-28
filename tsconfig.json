@@ -2,7 +2,8 @@
 	"compilerOptions": {
 		"typeRoots": [
 			"./types",
-			"./node_modules/@types"
+			"./node_modules/@types", 
+			"./global.d.ts"
 		],
 		"lib": [
 			"dom",
