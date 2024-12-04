@@ -12,7 +12,6 @@ const renderContent = (t) => {
             newsletter,
             home,
             about,
-            blog,
             work,
             gallery
         }
