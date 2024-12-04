@@ -60,11 +60,6 @@
             }
         }
     },
-    "blog": {
-        "label": "Blog",
-        "title": "Writing about design and tech...",
-        "description": "Read what {name} has been up to recently"
-    },
     "work": {
         "label": "Work",
         "title": "My projects",

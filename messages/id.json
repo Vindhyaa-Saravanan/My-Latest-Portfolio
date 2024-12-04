@@ -60,11 +60,6 @@
             }
         }
     },
-    "blog": {
-        "label": "Blog",
-        "title": "Menulis tentang desain dan teknologi...",
-        "description": "Baca apa yang {name} lakukan baru-baru ini"
-    },
     "work": {
         "label": "Karya",
         "title": "Proyek Saya",
