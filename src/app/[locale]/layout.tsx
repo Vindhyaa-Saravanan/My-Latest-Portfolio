@@ -6,8 +6,8 @@ import { Analytics } from '@vercel/analytics/next';
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from '@/app/resources'
 
-import { Inter } from 'next/font/google'
-import { Source_Code_Pro } from 'next/font/google';
+// import { Inter } from 'next/font/google'
+// import { Source_Code_Pro } from 'next/font/google';
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
@@ -15,6 +15,15 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 import { routing } from "@/i18n/routing";
 import { renderContent } from "@/app/resources";
 import { Background, Flex } from "@/once-ui/components";
+
+import { Playfair_Display } from 'next/font/google';
+
+const primary = Playfair_Display({
+    variable: '--font-primary',
+    subsets: ['latin'],
+    display: 'swap'
+});
+
 
 export async function generateMetadata(
 	{ params: { locale }}: { params: { locale: string }}
@@ -49,11 +58,6 @@ export async function generateMetadata(
 	}
 };
 
-const primary = Inter({
-	variable: '--font-primary',
-	subsets: ['latin'],
-	display: 'swap',
-})
 
 type FontConfig = {
     variable: string;
@@ -68,11 +72,6 @@ const tertiary: FontConfig | undefined = undefined;
 /*
 */
 
-const code = Source_Code_Pro({
-	variable: '--font-code',
-	subsets: ['latin'],
-	display: 'swap',
-});
 
 interface RootLayoutProps {
 	children: React.ReactNode;
@@ -94,12 +93,15 @@ export default async function RootLayout({
 			<Flex
 				as="html" lang="en"
 				background="page"
-				data-neutral={style.neutral} data-brand={style.brand} data-accent={style.accent}
-				data-solid={style.solid} data-solid-style={style.solidStyle}
-				data-theme={style.theme}
-				data-border={style.border}
-				data-surface={style.surface}
-				data-transition={style.transition}
+				data-theme="dark"
+				data-brand="aqua"
+				data-accent="aqua"
+				data-neutral="slate"
+				data-border="rounded"
+				data-solid="color"
+				data-solid-style="flat"
+				data-surface="filled"
+				data-transition="all"
 				className={classNames(
 					primary.variable,
 					secondary ? secondary.variable : '',
