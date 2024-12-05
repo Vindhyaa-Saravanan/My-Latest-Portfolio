@@ -46,7 +46,7 @@ export default function Home(
 ) {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations();
-	const { home, about, person, newsletter } = renderContent(t);
+	const { home, about, person } = renderContent(t);
 	return (
 		<Flex
 			maxWidth="m" fillWidth gap="xl"
@@ -129,9 +129,7 @@ export default function Home(
 				<Projects range={[1,1]} locale={locale}/>
 			</RevealFx>
 			<Projects range={[2]} locale={locale}/>
-			{ newsletter.display &&
-				<Mailchimp newsletter={newsletter} />
-			}
+
 		</Flex>
 	);
 }
