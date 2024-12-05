@@ -122,30 +122,37 @@ place for presentation skills and content quality.</>
             {
                 title: 'Python',
                 description: <>Proficient in Python with experience in Flask, Django, and Streamlit for web development and data science applications.</>,
+                images: [ ]
             },
             {
                 title: 'Java',
                 description: <>Experienced in Java for building robust backend systems and applications.</>,
+                images: [ ]
             },
             {
                 title: 'JavaScript',
                 description: <>Skilled in JavaScript, with HTML, CSS and including frameworks like Next.js and React, for creating dynamic web applications.</>,
+                images: [ ]
             },
             {
                 title: 'SQL',
                 description: <>Adept at using SQL for database management and data manipulation.</>,
+                images: [ ]
             },
             {
                 title: 'TensorFlow & Keras',
                 description: <>Hands-on experience with TensorFlow and Keras for developing AI and machine learning models.</>,
+                images: [ ]
             },
             {
                 title: 'Microsoft Azure & AWS',
                 description: <>Experienced with cloud platforms like Microsoft Azure and AWS for deploying scalable applications.</>,
+                images: [ ]
             },
             {
                 title: 'Git & GitHub',
                 description: <>Proficient in version control using Git and GitHub for collaborative software development.</>,
+                images: [ ]
             }
         ]
     }
