@@ -12,11 +12,6 @@ const person = {
     languages: ['English', 'Hindi', 'Tamil']  // optional: Leave the array empty if you don't want to display languages
 }
 
-const newsletter = {
-    display: false,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
-}
 
 const social = [
     // Links are automatically displayed.
@@ -126,50 +121,47 @@ place for presentation skills and content quality.</>
         skills: [
             {
                 title: 'Python',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [/*
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },*/
-                ]
+                description: <>Proficient in Python with experience in Flask, Django, and Streamlit for web development and data science applications.</>,
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    /*
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },*/
-                ]
+                title: 'Java',
+                description: <>Experienced in Java for building robust backend systems and applications.</>,
+            },
+            {
+                title: 'JavaScript',
+                description: <>Skilled in JavaScript, with HTML, CSS and including frameworks like Next.js and React, for creating dynamic web applications.</>,
+            },
+            {
+                title: 'SQL',
+                description: <>Adept at using SQL for database management and data manipulation.</>,
+            },
+            {
+                title: 'TensorFlow & Keras',
+                description: <>Hands-on experience with TensorFlow and Keras for developing AI and machine learning models.</>,
+            },
+            {
+                title: 'Microsoft Azure & AWS',
+                description: <>Experienced with cloud platforms like Microsoft Azure and AWS for deploying scalable applications.</>,
+            },
+            {
+                title: 'Git & GitHub',
+                description: <>Proficient in version control using Git and GitHub for collaborative software development.</>,
             }
         ]
     }
 }
 
 const work = {
-    label: 'Work',
+    label: 'Projects',
     title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
+    description: `Software projects by ${person.name}`
     // All projects will be listed on the /home and /work routes
 }
 
 const gallery = {
     label: 'Gallery',
     title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
+    description: `A photo gallery by ${person.name}`,
     // Images from https://pexels.com
     images: [
         { 
@@ -330,4 +322,4 @@ const gallery = {
     ]
 }
 
-export { person, social, newsletter, home, about, work, gallery };
+export { person, social, home, about, work, gallery };
