@@ -35,4 +35,4 @@ const display = {
 }
 
 
-export { routes, protectedRoutes, effects, style, display, baseURL, i18n, i18nOptions };
+export { routes, effects, style, display, baseURL, i18n, i18nOptions };
