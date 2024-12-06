@@ -133,6 +133,9 @@ export default async function RootLayout({
 						<Flex
 							justifyContent="center"
 							fillWidth minHeight="0">
+							<RouteGuard>
+								{children}
+							</RouteGuard>
 						</Flex>
 					</Flex>
 					<Footer/>
