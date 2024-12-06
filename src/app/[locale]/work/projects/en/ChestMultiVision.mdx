@@ -1,0 +1,47 @@
+---
+title: "Enhancing Medical Diagnostics with ChestMultiVision"
+publishedAt: "2024-05-06"
+summary: "Exploring the potential of deep learning for multi-label classification of chest X-rays, enabling early detection of multiple medical findings with a user-friendly application."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+  - "/images/projects/project-01/image-01.jpg"
+team:
+  - name: "Vindhyaa Saravanan"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/vindhyaa-saravanan/"
+---
+
+## Overview
+
+ChestMultiVision is a deep learning-powered web application designed to assist in the multi-label classification of chest X-rays. The project aims to address the challenges of detecting multiple coexisting pathologies in a single image, a limitation often faced by existing computer-aided diagnostic (CAD) systems. By leveraging a ResNet50V2-based model trained on the NIH ChestX-ray14 dataset, this application demonstrates the potential of AI in enhancing medical imaging diagnostics.
+
+**Disclaimer**: This prototype is not a medical device. Predictions are for demonstration purposes only and should not be used for medical diagnosis. Results may vary depending on demographic factors such as age and gender. Please consult a medical professional for accurate diagnosis and advice.
+
+## Key Features
+
+- **Deep Learning Model**: Built a custom multi-label classification model using ResNet50V2, fine-tuned to predict six medical findings: Atelectasis, Effusion, Infiltration, Mass, No Finding, and Nodule.
+- **Data-Driven Insights**: Conducted a data ablation study to compare the model's performance across different subsets of the ChestX-ray14 dataset, gaining insights into the impact of training data composition.
+- **User-Friendly Interface**: Developed a web application using Streamlit, enabling clinicians to upload chest X-rays and receive predictions through an intuitive interface.
+- **Rapid Predictions**: Provides real-time diagnostic predictions, potentially serving as a second opinion to aid medical professionals in early detection and treatment planning.
+
+## Technologies Used
+
+- **Python**: For data preprocessing, model development, and backend logic.
+- **TensorFlow and Keras**: For implementing and fine-tuning the ResNet50V2 architecture.
+- **Streamlit**: To build an interactive and accessible web-based interface.
+- **Google Colab**: For scalable training and experimentation with the ChestX-ray14 dataset.
+
+## Challenges and Learnings
+
+The primary challenge was developing a model capable of handling the overlapping labels inherent in multi-label classification tasks. Balancing model complexity with interpretability and optimizing for real-world performance required extensive experimentation and parameter tuning. Additionally, ensuring the application was accessible and easy to use by non-technical users highlighted the importance of intuitive design.
+
+## Outcome
+
+ChestMultiVision showcases the potential of AI in addressing critical challenges in medical imaging. While it remains a prototype, the application has demonstrated its ability to deliver valuable insights into chest X-ray diagnostics, cutting down on manual review time and offering preliminary results that could assist medical professionals. The project also highlights opportunities for further research, such as improving demographic inclusivity and integrating with electronic health records (EHR) systems.
+
+## Next Steps
+
+Future work will focus on improving prediction accuracy through ensemble methods, expanding the dataset to include diverse demographics, and incorporating feedback from medical professionals to refine the application.
+
+---

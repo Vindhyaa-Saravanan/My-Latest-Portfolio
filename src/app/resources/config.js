@@ -16,27 +16,6 @@ const routes = {
     '/gallery': true,
 }
 
-// Enable password protection on selected routes
-// Set password in pages/api/authenticate.ts
-const protectedRoutes = {
-    '/work/automate-design-handovers-with-a-figma-to-code-pipeline': true
-}
-
-const effects = {
-    mask: 'cursor',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
-    gradient: {
-        display: true,
-        opacity: 0.4            // 0 - 1
-    },
-    dots: {
-        display: true,
-        opacity: 0.4,           // 0 - 1
-        size: '24'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 634
-    },
-    lines: {
-        display: false,
-    },
-}
 
 const style = {
     theme:       'dark',         // dark | light
