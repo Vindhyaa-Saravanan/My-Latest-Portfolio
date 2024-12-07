@@ -101,7 +101,7 @@ export default async function RootLayout({
 				data-theme="dark"
 				data-brand="aqua"
 				data-accent="aqua"
-				data-neutral="slate"
+				data-neutral="custom"
 				data-border="rounded"
 				data-solid="color"
 				data-solid-style="flat"
