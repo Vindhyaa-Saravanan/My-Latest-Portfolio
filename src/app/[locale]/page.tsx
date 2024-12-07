@@ -4,7 +4,7 @@ import { Heading, Flex, Text, Button,  Avatar, RevealFx, Arrow } from '@/once-ui
 import { Projects } from '@/components/work/Projects';
 
 import { baseURL, routes, renderContent } from '@/app/resources'; 
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 
 export async function generateMetadata(
@@ -43,7 +43,7 @@ export async function generateMetadata(
 export default function Home(
 	{ params: {locale}}: { params: { locale: string }}
 ) {
-	unstable_setRequestLocale(locale);
+	setRequestLocale(locale);
 	const t = useTranslations();
 	const { home, about, person } = renderContent(t);
 	return (
