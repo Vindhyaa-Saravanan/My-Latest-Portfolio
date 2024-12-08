@@ -86,9 +86,7 @@ export default function Home(
 								variant="display-strong-l">
 								{home.headline}
 							</Heading>
-							<Flex fillWidth alignItems="center" gap="m">
-                            <img src="images/logo.png" alt="Logo" style={{ height: '50px', width: 'auto' }} />
-                        </Flex>
+                            <img src="images/logo.png" alt="Logo" style={{ height: '200px', width: 'auto' }} />
 						</RevealFx>
 						<RevealFx
 							translateY="8" delay={0.2}>
