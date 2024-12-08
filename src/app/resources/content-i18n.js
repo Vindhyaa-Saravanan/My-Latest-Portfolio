@@ -153,80 +153,75 @@ const createI18nContent = (t) => {
         description: t("gallery.description", {name: person.name}),
         // Images from https://pexels.com
         images: [
-            {
-                src: '/images/gallery/img-01.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-02.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
             { 
-                src: '/images/gallery/img-03.jpg',
+                src: '/images/gallery/img-01.jpg', 
                 alt: 'image',
                 orientation: 'vertical'
             },
             { 
-                src: '/images/gallery/img-04.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-05.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-06.jpg',
+                src: '/images/gallery/img-02.jpg', 
                 alt: 'image',
                 orientation: 'vertical'
             },
-            {
-                src: '/images/gallery/img-07.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-08.jpg',
+            { 
+                src: '/images/gallery/img-03.jpg', 
                 alt: 'image',
                 orientation: 'vertical'
             },
-            {
-                src: '/images/gallery/img-09.jpg',
+            { 
+                src: '/images/gallery/img-05.jpg', 
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
-            {
-                src: '/images/gallery/img-10.jpg',
+            { 
+                src: '/images/gallery/img-06.jpg', 
+                alt: 'image',
+                orientation: 'vertical'
+            },
+            { 
+                src: '/images/gallery/img-07.jpg', 
+                alt: 'image',
+                orientation: 'vertical'
+            },
+            { 
+                src: '/images/gallery/img-08.jpg', 
                 alt: 'image',
                 orientation: 'horizontal'
             },
             { 
-                src: '/images/gallery/img-11.jpg',
+                src: '/images/gallery/img-09.jpg', 
                 alt: 'image',
                 orientation: 'vertical'
             },
-            {
-                src: '/images/gallery/img-12.jpg',
+            { 
+                src: '/images/gallery/img-10.jpg', 
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
-            {
-                src: '/images/gallery/img-13.jpg',
+            { 
+                src: '/images/gallery/img-11.jpg', 
+                alt: 'image',
+                orientation: 'vertical'
+            },
+            { 
+                src: '/images/gallery/img-12.jpg', 
                 alt: 'image',
                 orientation: 'horizontal'
             },
             { 
-                src: '/images/gallery/img-14.jpg',
+                src: '/images/gallery/img-13.jpg', 
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
+            },
+            { 
+                src: '/images/gallery/img-14.jpg', 
+                alt: 'image',
+                orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-15.jpg',
                 alt: 'image',
-                orientation: 'vertical'
+                orientation: 'horizontal'
             },
             {
                 src: '/images/gallery/img-16.jpg',
@@ -236,27 +231,27 @@ const createI18nContent = (t) => {
             {
                 src: '/images/gallery/img-17.jpg',
                 alt: 'image',
-                orientation: 'vertical'
+                orientation: 'horizontal'
             },
             {
                 src: '/images/gallery/img-18.jpg',
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-19.jpg',
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-20.jpg',
                 alt: 'image',
-                orientation: 'vertical'
+                orientation: 'horizontal'
             },
             {
                 src: '/images/gallery/img-21.jpg',
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-22.jpg',
@@ -271,7 +266,7 @@ const createI18nContent = (t) => {
             {
                 src: '/images/gallery/img-24.jpg',
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-25.jpg',
@@ -291,7 +286,7 @@ const createI18nContent = (t) => {
             {
                 src: '/images/gallery/img-28.jpg',
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-29.jpg',
@@ -301,12 +296,12 @@ const createI18nContent = (t) => {
             {
                 src: '/images/gallery/img-30.jpg',
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             },
             {
                 src: '/images/gallery/img-31.jpg',
                 alt: 'image',
-                orientation: 'horizontal'
+                orientation: 'vertical'
             }
         ]
     }
