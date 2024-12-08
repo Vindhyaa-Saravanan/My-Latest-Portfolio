@@ -37,8 +37,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio of work as a ${person.role}`,
-    headline: <>Aspiring software engineer</>,
-    subline: <>I'm Vindhyaa, an aspiring software engineer and integrated Masters student at University of Leeds, with cybersecurity and cloud security experience, and an avid interest in AI/ML and data science. Proficient in Python with a focus on delivering real customer impact.</>
+    headline: <>Building impactful tech with AI, cloud, and cybersecurity</>,
+    subline: <>I’m Vindhyaa, a Computer Science student at the University of Leeds, with experience in cybersecurity, cloud platforms, and AI/ML. I’m passionate about leveraging technology to create real-world impact, particularly in healthcare AI.</>
 }
 
 const about = {

@@ -1,4 +1,18 @@
-# Vindhyaa's Portfolio
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Vindhyaa-Saravanan/My-Latest-Portfolio">
+    <img src="src\app\logo.png" alt="Logo" width="200" height="200">
+  </a>
+
+<h3 align="center">Vindhyaa's Portfolio</h3>
+
+  <p align="center">
+    My portfolio website, built with Next.js, TypeScript, Once UI, and Vercel.
+    <br />
+    <a href="https://vindhyaa-portfolio.vercel.app/"><strong>View my portfolio »</strong></a>
+  </p>
+</div>
 
 # **License**
 

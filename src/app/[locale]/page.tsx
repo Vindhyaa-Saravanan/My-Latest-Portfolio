@@ -99,6 +99,17 @@ export default function Home(
 							</Flex>
 						</RevealFx>
 						<RevealFx translateY="12" delay={0.4}>
+                        <Flex fillWidth alignItems="center" gap="m">
+                            <img src="src/app/logo.png" alt="Logo" style={{ height: '50px', width: 'auto' }} />
+                            <Text
+                                wrap="balance"
+                                onBackground="neutral-weak"
+                                variant="heading-default-xl">
+                                Aspiring software engineer
+                            </Text>
+                        </Flex>
+                    </RevealFx>
+						<RevealFx translateY="12" delay={0.4}>
 							<Flex fillWidth>
 								<Button
 									id="about"
