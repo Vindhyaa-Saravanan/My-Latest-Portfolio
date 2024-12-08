@@ -87,7 +87,7 @@ export default function Home(
 								{home.headline}
 							</Heading>
 							<Flex fillWidth alignItems="center" gap="m">
-                            <img src="logo.png" alt="Logo" style={{ height: '50px', width: 'auto' }} />
+                            <img src="images/logo.png" alt="Logo" style={{ height: '50px', width: 'auto' }} />
                         </Flex>
 						</RevealFx>
 						<RevealFx
