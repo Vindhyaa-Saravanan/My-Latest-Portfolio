@@ -86,6 +86,9 @@ export default function Home(
 								variant="display-strong-l">
 								{home.headline}
 							</Heading>
+							<Flex fillWidth alignItems="center" gap="m">
+                            <img src="logo.png" alt="Logo" style={{ height: '50px', width: 'auto' }} />
+                        </Flex>
 						</RevealFx>
 						<RevealFx
 							translateY="8" delay={0.2}>
@@ -98,17 +101,6 @@ export default function Home(
 								</Text>
 							</Flex>
 						</RevealFx>
-						<RevealFx translateY="12" delay={0.4}>
-                        <Flex fillWidth alignItems="center" gap="m">
-                            <img src="src/app/logo.png" alt="Logo" style={{ height: '50px', width: 'auto' }} />
-                            <Text
-                                wrap="balance"
-                                onBackground="neutral-weak"
-                                variant="heading-default-xl">
-                                Aspiring software engineer
-                            </Text>
-                        </Flex>
-                    </RevealFx>
 						<RevealFx translateY="12" delay={0.4}>
 							<Flex fillWidth>
 								<Button
