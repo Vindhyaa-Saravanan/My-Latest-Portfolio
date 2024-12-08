@@ -37,8 +37,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio of work as a ${person.role}`,
-    headline: <>Building impactful tech with AI, cloud, and cybersecurity</>,
-    subline: <>I’m Vindhyaa, a Computer Science student at the University of Leeds, with experience in cybersecurity, cloud platforms, and AI/ML. I’m passionate about leveraging technology to create real-world impact, particularly in healthcare AI.</>
+    headline: <>Building impactful, secure software with AI and cloud</>,
+    subline: <>I’m Vindhyaa, a finalist CS student at University of Leeds, with cybersecurity, cloud security, and AI/ML experience. Passionate about leveraging technology to create real-world impact, particularly in healthcare AI.</>
 }
 
 const about = {
@@ -59,7 +59,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Vindhyaa is a UK-based Final-year Computer Science student skilled in cybersecurity, cloud security experience, hands-on AI/ML, and software development.</>
+        description: <>Vindhyaa is a UK-based final year MEng Computer Science student skilled in software development, cybersecurity, cloud security, and hands-on AI/ML.</>
     },
     work: {
         display: true, // set to false to hide this section

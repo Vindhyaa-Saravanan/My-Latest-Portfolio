@@ -87,7 +87,7 @@ export default function Home(
 								variant="display-strong-l">
 								{home.headline}
 							</Heading>
-                            <img src="images/logo.png" alt="Logo" style={{ height: '200px', width: 'auto' }} />
+                            <img src="images/logo.png" alt="Logo" style={{ height: '150px', width: 'auto' }} />
 							     </Flex>
 						</RevealFx>
 						<RevealFx
