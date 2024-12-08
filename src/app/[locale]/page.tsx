@@ -81,12 +81,14 @@ export default function Home(
 						fillWidth maxWidth="s" gap="m">
 						<RevealFx
 							translateY="4">
+								<Flex alignItems="center" gap="m">
 							<Heading
 								wrap="balance"
 								variant="display-strong-l">
 								{home.headline}
 							</Heading>
                             <img src="images/logo.png" alt="Logo" style={{ height: '200px', width: 'auto' }} />
+							     </Flex>
 						</RevealFx>
 						<RevealFx
 							translateY="8" delay={0.2}>
