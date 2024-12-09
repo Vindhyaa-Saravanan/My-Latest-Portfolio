@@ -199,7 +199,7 @@ const gallery = {
         { 
             src: '/images/gallery/img-07.jpg', 
             alt: 'image',
-            orientation: 'vertical'
+            orientation: 'horizontal'
         },
         { 
             src: '/images/gallery/img-08.jpg', 
@@ -214,7 +214,7 @@ const gallery = {
         { 
             src: '/images/gallery/img-10.jpg', 
             alt: 'image',
-            orientation: 'vertical'
+            orientation: 'horizontal'
         },
         { 
             src: '/images/gallery/img-11.jpg', 
@@ -289,7 +289,7 @@ const gallery = {
         {
             src: '/images/gallery/img-25.jpg',
             alt: 'image',
-            orientation: 'vertical'
+            orientation: 'horizontal'
         },
         {
             src: '/images/gallery/img-26.jpg',
@@ -299,7 +299,7 @@ const gallery = {
         {
             src: '/images/gallery/img-27.jpg',
             alt: 'image',
-            orientation: 'horizontal'
+            orientation: 'vertical'
         },
         {
             src: '/images/gallery/img-28.jpg',
@@ -314,7 +314,7 @@ const gallery = {
         {
             src: '/images/gallery/img-30.jpg',
             alt: 'image',
-            orientation: 'vertical'
+            orientation: 'horizontal'
         },
         {
             src: '/images/gallery/img-31.jpg',
