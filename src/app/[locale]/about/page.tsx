@@ -93,16 +93,27 @@ export default function About(
                 }}
             />
             { about.tableOfContent.display && (
-                <Flex
-                    style={{ left: '0', top: '50%', transform: 'translateY(-50%)' }}
-                    position="fixed"
-                    paddingLeft="24" gap="32"
-                    direction="column" hide="s">
-                    <TableOfContents
-                        structure={structure}
-                        about={about} />
-                </Flex>
-            )}
+    <Flex
+        style={{
+            left: '0', 
+            top: '50%', 
+            transform: 'translateY(-50%)', 
+            width: '250px',  // Set a smaller width
+            fontFamily: 'var(--font-family-body)',  // Apply the body font
+            fontSize: '12px',  // Adjust font size as needed
+        }}
+        position="fixed"
+        paddingLeft="24" 
+        gap="16"
+        direction="column" 
+        hide="s"
+    >
+        <TableOfContents
+            structure={structure}
+            about={about} />
+    </Flex>
+)}
+
             <Flex
                 fillWidth
                 mobileDirection="column" justifyContent="center">

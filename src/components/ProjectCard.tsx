@@ -54,57 +54,71 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     };
 
     return (
-        <Flex
-            fillWidth gap="m"
-            direction="column">
-            {images[activeIndex] && <Flex onClick={handleImageClick}>
-                <RevealFx
-                    style={{width: '100%'}}
-                    delay={0.4}
-                    trigger={isTransitioning}
-                    speed="fast">
-                    <SmartImage
-                        tabIndex={0}
-                        radius="l"
-                        alt={title}
-                        aspectRatio="16 / 9"
-                        src={images[activeIndex]}
-                        style={{
-                            border: '1px solid var(--neutral-alpha-weak)',
-                            ...(images.length > 1 && {
-                                cursor: 'pointer',
-                            }),
-                        }}/>
-                </RevealFx>
-            </Flex>}
-            {images.length > 1 && (
-                <Flex
-                    gap="4" paddingX="s"
-                    fillWidth
-                    justifyContent="center">
-                    {images.map((_, index) => (
-                        <Flex
-                            key={index}
-                            onClick={() => handleControlClick(index)}
-                            style={{
-                                background: activeIndex === index 
-                                    ? 'var(--neutral-on-background-strong)' 
-                                    : 'var(--neutral-alpha-medium)',
-                                cursor: 'pointer',
-                                transition: 'background 0.3s ease',
-                            }}
-                            fillWidth
-                            height="2">
-                        </Flex>
-                    ))}
-                </Flex>
-            )}
-            <Flex
-                mobileDirection="column"
-                fillWidth paddingX="s" paddingTop="12" paddingBottom="24" gap="l">
-                {title && (
+        <Flex fillWidth gap="m" direction="row" justifyContent="flex-start">
+            {/* Left Section (Image and Carousel) */}
+            <Flex direction="column" gap="m">
+                {images[activeIndex] && (
+                    <Flex onClick={handleImageClick}>
+                        <RevealFx
+                            style={{ width: '100%' }}
+                            delay={0.4}
+                            trigger={isTransitioning}
+                            speed="fast">
+                            <SmartImage
+                                tabIndex={0}
+                                radius="l"
+                                alt={title}
+                                aspectRatio="16 / 9"
+                                src={images[activeIndex]}
+                                style={{
+                                    border: '1px solid var(--neutral-alpha-weak)',
+                                    ...(images.length > 1 && {
+                                        cursor: 'pointer',
+                                    }),
+                                    width: '600px', // Limit the max width of the image
+                                }}
+                            />
+                        </RevealFx>
+                    </Flex>
+                )}
+                {images.length > 1 && (
                     <Flex
-                        flex={5}>
+                        gap="4" paddingX="s"
+                        fillWidth
+                        justifyContent="center"
+                        style={{
+                            width: '600px',  // Limit the max width
+                        }}>
+                        {images.map((_, index) => (
+                            <Flex
+                                key={index}
+                                onClick={() => handleControlClick(index)}
+                                style={{
+                                    background: activeIndex === index
+                                        ? 'var(--neutral-on-background-strong)'
+                                        : 'var(--neutral-alpha-medium)',
+                                    cursor: 'pointer',
+                                    transition: 'background 0.3s ease',
+                                }}
+                                fillWidth
+                                height="2">
+                            </Flex>
+                        ))}
+                    </Flex>
+                )}
+            </Flex>
+    
+            {/* Right Section (Title, Avatars, Description, and SmartLink) */}
+            <Flex
+                direction="column"
+                gap="16"
+                paddingX="s"
+                paddingTop="12"
+                paddingBottom="24"
+                style={{ flex: 1 , flexShrink: 0}}
+            >
+                {title && (
+                    <Flex flex={5}>
                         <Heading
                             as="h2"
                             wrap="balance"
@@ -114,14 +128,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     </Flex>
                 )}
                 {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-                    <Flex
-                        flex={7} direction="column"
-                        gap="16">
+                    <Flex flex={7} direction="column" gap="16">
                         {avatars?.length > 0 && (
                             <AvatarGroup
                                 avatars={avatars}
                                 size="m"
-                                reverseOrder/>
+                                reverseOrder
+                            />
                         )}
                         {description?.trim() && (
                             <Text
@@ -134,12 +147,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                         {content?.trim() && (
                             <SmartLink
                                 suffixIcon="chevronRight"
-                                style={{margin: '0', width: 'fit-content'}}
-                                href={href}>
-                                    <Text
-                                        variant="body-default-s">
-                                       {t("projectCard.label")}
-                                    </Text>
+                                style={{ margin: '0', width: 'fit-content' }}
+                                href={href}
+                            >
+                                <Text variant="body-default-s">
+                                    {t("projectCard.label")}
+                                </Text>
                             </SmartLink>
                         )}
                     </Flex>
@@ -147,4 +160,5 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </Flex>
         </Flex>
     );
+    
 };

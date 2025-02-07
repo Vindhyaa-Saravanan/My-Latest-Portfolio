@@ -24,6 +24,7 @@ const primary = Playfair_Display({
 });
 
 
+
 export async function generateMetadata(
 	{ params: { locale }}: { params: { locale: string }}
 ) {
