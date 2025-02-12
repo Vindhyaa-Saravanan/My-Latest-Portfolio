@@ -54,7 +54,7 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://outlook.office.com/bookwithme/user/a0a108575eb640b8a5309f88f9c20894@leeds.ac.uk/meetingtype/1DYl5yYKMEir5rFTn3TZmw2?anonymous&ep=mlink'
     },
     intro: {
         display: true,
